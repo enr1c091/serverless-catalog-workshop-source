@@ -9,36 +9,29 @@ phases:
       - echo Entered the install phase...
       - apt-get -qq update && apt-get -qq install curl
       - apt-get -qq install asciidoctor
-      - curl -s -L https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Linux-64bit.deb -o hugo.deb
+      - curl -s -L https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_0.64.1_Linux-64bit.deb -o hugo.deb
       - dpkg -i hugo.deb
     finally:
       - echo Installation done
   pre_build:
     commands:
-      #- cd $CODEBUILD_SRC_DIR/workshop
       - pip install -r requirements.txt
-      #- python3 pre_build.py
   build:
     commands:
       - echo Entered the build phase ...
       - echo Build started on `date`
-      #- cd $CODEBUILD_SRC_DIR/workshop
       - hugo --quiet
       - aws s3 sync public/ s3://$S3_BUCKET/ --cache-control 'max-age=3600, public' --exclude '*' --include '*.html' --include '*.xml'
       - aws s3 sync public/ s3://$S3_BUCKET/ --cache-control 'max-age=86400, public' --exclude '*.html' --exclude '*.xml'
       #- aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION --paths /\*
-
     finally:
       - echo Building the HTML files finished
   post_build:
     commands:
-      #- cd $CODEBUILD_SRC_DIR/workshop
-      #- python3 post_build.py
 
 artifacts:
   files:
     - "**/*"
     - "*"
-  #base-directory: $CODEBUILD_SRC_DIR/workshop/public/
   base-directory: $CODEBUILD_SRC_DIR/public/
   discard-paths: no
