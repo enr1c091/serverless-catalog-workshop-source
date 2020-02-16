@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Packaging and Distributing the Pipeline on AWS Serverless Catalog Workshop</title>
+    <link>/en/050_catalog/</link>
+    <description>Recent content in Packaging and Distributing the Pipeline on AWS Serverless Catalog Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/en/050_catalog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Service Catalog</title>
+      <link>/en/050_catalog/service-catalog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/050_catalog/service-catalog/</guid>
+      <description>AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architectures. AWS Service Catalog allows you to centrally manage commonly deployed IT services, and helps you achieve consistent governance and meet your compliance requirements, while enabling users to quickly deploy only the approved IT services they need.</description>
+    </item>
+    
+    <item>
+      <title>Packaging the Node.js Application</title>
+      <link>/en/050_catalog/package-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/050_catalog/package-app/</guid>
+      <description>Since we want every new serverless project to be as a boilerplate, The first thing we have to do is to package our application into a ZIP file and upload it to a S3 bucket which used as source for every new AWS CodeCommit repository created.
+Package the application cd ~/environment/nodejs-sam-backend-demo zip -r ~/environment/sample.zip * Create an unique S3 bucket Create a S3 bucket choosing an unique name for your bucket.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Pipeline CloudFormation Template</title>
+      <link>/en/050_catalog/cf-template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/050_catalog/cf-template/</guid>
+      <description>Download the template file mkdir ~/environment/cf-template cd ~/environment/cf-template sudo curl --location -o ./template.yaml https://raw.githubusercontent.com/enr1c091/serverless-catalog-workshop/master/template.yaml  Spare a few minutes to go through the CloudFormation template and understand how resources are being created based on the given parameters.
+ Take a look at the template.yaml file downloaded. These are the main parameters we are going to use:
+   Parameter Description     ProjectName Project name   RepositoryName CodeCommit Repository name   RepositoryDescription CodeCommit Repository description   CodeS3Bucket Bucket name and path where our bundled code resides e.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Service Catalog Product</title>
+      <link>/en/050_catalog/catalog-create/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/050_catalog/catalog-create/</guid>
+      <description>Make sure you have the URL of your template file with you. e.g. https://serverless-wksp-sample-your-name.s3.amazonaws.com/service-catalog/template.yaml
+ Create a Service Catalog Portfolio Click this deep link to access your AWS Service Catalog console
+ Under Administration select Portifolios Click Create portifolio Name it Projects with CI/CD Pipeline and type the Owner name, click Create. Click on your newly created portifolio.   Upload a new Product  Click Upload new product Name it Serverless Project and type the Owner name.</description>
+    </item>
+    
+    <item>
+      <title>Granting Access to Users Launch the Product</title>
+      <link>/en/050_catalog/catalog-access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/050_catalog/catalog-access/</guid>
+      <description>  Click Group, roles and users (0)
+  Click Add groups, roles, users   Click Users and check the box in front of your user.
+  Click Add access.   </description>
+    </item>
+    
+    <item>
+      <title>Launching a Serverless Project</title>
+      <link>/en/050_catalog/catalog-launch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/050_catalog/catalog-launch/</guid>
+      <description>Click Product list
+  Click the three dots in front of your Product, click Launch.   Name it demo-service and click Next.
+  Name it demo-service.
+  Type demo-service for ProjectName.
+  Type demo-service-repo for RepositoryName.
+  Type Repository for our demo service for ProjectName.
+  Type YOUR-BUCKET-NAME/sam/nodejs for CodeS3Bucket and click Next.
+  Accept all defaults by clicking Next</description>
+    </item>
+    
+    <item>
+      <title>Testing the APIs</title>
+      <link>/en/050_catalog/testing-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/050_catalog/testing-app/</guid>
+      <description>Go back to your Cloud9 environment and open a terminal tab.
+Development Environment Testing Export the Dev stack output variables To invoke our API&#39;s, we first need to fetch the ApiUrl output variable that our CloudFormation Development stack gives us. So let us iterate through our stack and export all output variables as environment variables.
+stack_info=$(aws cloudformation describe-stacks --stack-name demo-service-Dev --output json) if [[ &amp;#34;$stack_info&amp;#34; =~ &amp;#34;OutputKey&amp;#34; ]]; then read -r -a output_keys &amp;lt;&amp;lt;&amp;lt; $(echo &amp;#34;$stack_info&amp;#34; | jq &amp;#34;.</description>
+    </item>
+    
+  </channel>
+</rss>

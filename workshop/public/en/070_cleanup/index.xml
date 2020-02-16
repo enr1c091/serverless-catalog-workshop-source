@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cleanup on AWS Serverless Catalog Workshop</title>
+    <link>/en/070_cleanup/</link>
+    <description>Recent content in Cleanup on AWS Serverless Catalog Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/en/070_cleanup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Remove the Environment Stacks</title>
+      <link>/en/070_cleanup/stacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/070_cleanup/stacks/</guid>
+      <description>Delete the stacks for each environment created for our application aws cloudformation delete-stack --stack-name demo-service-Dev aws cloudformation delete-stack --stack-name demo-service-Staging aws cloudformation delete-stack --stack-name demo-service-Prod Make sure to refresh until your stacks are deleted to move forward </description>
+    </item>
+    
+    <item>
+      <title>Delete the S3 Bucket</title>
+      <link>/en/070_cleanup/s3bucket/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/070_cleanup/s3bucket/</guid>
+      <description>Empty the S3 Bucket aws s3 rm s3://serverless-wksp-sample-&amp;lt;your-name&amp;gt; --recursive Delete the S3 Bucket aws s3 rb s3://serverless-wksp-sample-&amp;lt;your-name&amp;gt; --force </description>
+    </item>
+    
+    <item>
+      <title>Undeploy the Service Catalog</title>
+      <link>/en/070_cleanup/service-catalog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/070_cleanup/service-catalog/</guid>
+      <description>Let us now terminate the provisioned product in Service Catalog as well as deleting both the product and portifolio we created.
+Empty the Build Artifact S3 Bucket Go to your AWS CloudFormation and search for the stack Service Catalog created starting with the SC- prefix. Go to Outputs and take note of the ArtifactBucket S3 Bucket name. aws s3 rm s3://&amp;lt;YOUR-ARTIFACT-BUCKET-NAME&amp;gt; --recursive Terminate provisioned product aws servicecatalog terminate-provisioned-product --provisioned-product-name demo-service Go to your Service Catalog console in Provisioned Products and wait until the termination is complete to move forward Remove product association from the portifolio  Go to Portifolios.</description>
+    </item>
+    
+    <item>
+      <title>Delete the CodeCommit Repositories</title>
+      <link>/en/070_cleanup/commit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/070_cleanup/commit/</guid>
+      <description>aws codecommit delete-repository --repository-name demo-service-repo </description>
+    </item>
+    
+    <item>
+      <title>Cleanup the Workspace</title>
+      <link>/en/070_cleanup/workspace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/en/070_cleanup/workspace/</guid>
+      <description>Since we no longer need the Cloud9 instance to have Administrator access to our account, we can delete the workspace we created:
+ Go to your Cloud9 Environment. Select the environment named serverless-catalog-workshop and pick delete.  </description>
+    </item>
+    
+  </channel>
+</rss>

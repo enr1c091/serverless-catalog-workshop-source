@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Packaging and Distributing your Pipeline on AWS Serverless Catalog Workshop</title>
+    <link>/en/010_introduction/013_service-catalog/</link>
+    <description>Recent content in Packaging and Distributing your Pipeline on AWS Serverless Catalog Workshop</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="/en/010_introduction/013_service-catalog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

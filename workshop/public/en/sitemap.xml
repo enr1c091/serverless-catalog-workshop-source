@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="/pt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/self_paced/account/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/010_introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/self_paced/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/010_introduction/011_architecture/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/aws_event/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/010_introduction/012_pipeline/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/010_introduction/013_service-catalog/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/prereqs/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/workspace/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/iamrole/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/ec2instance/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/workspaceiam/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/aws_event/portal/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/030_application/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/030_application/sam-init/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/030_application/explore-sam/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/030_application/delete-sample/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/030_application/clone-repo/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/030_application/sam-deploy/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/030_application/testing-app/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/create-repo/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/iam-permission/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/git-credentials/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/upload-code-git/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/create-s3-bucket/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/create-pipeline/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/create-build-actions/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/create-deploy-actions/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/trigger-new-release/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/040_pipeline/cleanup/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/050_catalog/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/050_catalog/service-catalog/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/050_catalog/package-app/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/050_catalog/cf-template/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/050_catalog/catalog-create/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/050_catalog/catalog-access/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/050_catalog/catalog-launch/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/050_catalog/testing-app/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/060_conclusion/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/060_conclusion/steps-done/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/060_conclusion/feedback/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/070_cleanup/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/070_cleanup/stacks/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/070_cleanup/s3bucket/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/070_cleanup/service-catalog/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/070_cleanup/commit/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/070_cleanup/workspace/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/010_introduction/011_architecture/sam/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/010_introduction/011_architecture/application-structure/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="/pt/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/eu-west-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/more_resources/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/us-east-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/us-east-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/us-west-2/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/020_prerequisites/workspace/ap-southeast-1/</loc>
+  </url>
+  
+  <url>
+    <loc>/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="/pt/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+  </url>
+  
+</urlset>

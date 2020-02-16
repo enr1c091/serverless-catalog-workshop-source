@@ -1,0 +1,2392 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.62.1" />
+    <meta name="description" content="AWS Serverless Catalog Workshop">
+<meta name="author" content="Enrico Bergamo">
+
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <title>More Resources :: AWS Serverless Catalog Workshop</title>
+
+    
+    <link href="../../css/nucleus.css?1581887686" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1581887686" rel="stylesheet">
+    <link href="../../css/hybrid.css?1581887686" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1581887686" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1581887686" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1581887686" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1581887686" rel="stylesheet">
+    <link href="../../css/theme.css?1581887686" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1581887686" rel="stylesheet">
+    
+      <link href="../../css/theme-aws.css?1581887686" rel="stylesheet">
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1581887686"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    <!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="en" class="js csstransforms3d">
+  <head>
+
+    <link rel="manifest" href="../../manifest.json">
+
+    <meta charset="utf-8">
+    <meta property="og:title" content="EKSworkshop.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eksworkshop.com" />
+    <meta property="og:image" content="https://eksworkshop.com/images/3-service-animated.gif" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../../icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../../icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../../icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../../icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../../icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../../icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../../icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../../icons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Amazon EKS Workshop"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/icons/mstile-310x310.png" />
+
+    <link href="../../mermaid/mermaid.css?1581887686" type="text/css" rel="stylesheet" />
+    <link href="../../css/jquery-ui.min.css?1581887686" rel="stylesheet">
+    <script src="../../js/jquery-ui-1.12.1.min.js?1581887686"></script>
+    <script src="../../mermaid/mermaid.min.js?1581887686"></script>
+    <script>
+	var config = {
+        startOnLoad:true,
+        flowchart:{
+	    curve:'basis'
+        }
+      };
+        mermaid.initialize(config);
+    </script>
+  </head>
+  <body class="" data-url="/en/more_resources/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="../../" title="Go home"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" width="60%" style="padding:20px 0px;"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1581887686"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1581887686"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/en";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1581887686"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/010_introduction/" title="Introduction" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/010_introduction/">
+          Introduction
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/010_introduction/011_architecture/" title="Structuring a Serverless application" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/010_introduction/011_architecture/">
+          Structuring a Serverless application
+          
+            
+              <i class="fas fa-caret-right"></i>
+            
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/010_introduction/011_architecture/sam/" title="AWS Serverless Application Model (SAM)" class="dd-item ">
+        <a href="../../en/010_introduction/011_architecture/sam/">
+        AWS Serverless Application Model (SAM)
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/010_introduction/011_architecture/application-structure/" title="Serverless application structure" class="dd-item ">
+        <a href="../../en/010_introduction/011_architecture/application-structure/">
+        Serverless application structure
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/010_introduction/012_pipeline/" title="Creating a Reusable Delivery Pipeline" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/010_introduction/012_pipeline/">
+          Creating a Reusable Delivery Pipeline
+          
+          
+      </a>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/010_introduction/013_service-catalog/" title="Packaging and Distributing your Pipeline" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/010_introduction/013_service-catalog/">
+          Packaging and Distributing your Pipeline
+          
+          
+      </a>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/020_prerequisites/" title="Start the workshop..." class="dd-item 
+        
+        
+        ">
+      <a href="../../en/020_prerequisites/">
+          Start the workshop...
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/020_prerequisites/self_paced/" title="...on your own" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/020_prerequisites/self_paced/">
+          ...on your own
+          
+            
+              <i class="fas fa-caret-right"></i>
+            
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/020_prerequisites/self_paced/account/" title="Create an AWS account" class="dd-item ">
+        <a href="../../en/020_prerequisites/self_paced/account/">
+        Create an AWS account
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/020_prerequisites/aws_event/" title="...at an AWS event" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/020_prerequisites/aws_event/">
+          ...at an AWS event
+          
+            
+              <i class="fas fa-caret-right"></i>
+            
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/020_prerequisites/aws_event/portal/" title="AWS Workshop Portal" class="dd-item ">
+        <a href="../../en/020_prerequisites/aws_event/portal/">
+        AWS Workshop Portal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/020_prerequisites/workspace/prereqs/" title="Prerequisites" class="dd-item ">
+        <a href="../../en/020_prerequisites/workspace/prereqs/">
+        Prerequisites
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/020_prerequisites/workspace/workspace/" title="Create a Workspace" class="dd-item ">
+        <a href="../../en/020_prerequisites/workspace/workspace/">
+        Create a Workspace
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/020_prerequisites/workspace/iamrole/" title="Create an IAM role for your Workspace" class="dd-item ">
+        <a href="../../en/020_prerequisites/workspace/iamrole/">
+        Create an IAM role for your Workspace
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/020_prerequisites/workspace/ec2instance/" title="Attach the IAM role to your Workspace" class="dd-item ">
+        <a href="../../en/020_prerequisites/workspace/ec2instance/">
+        Attach the IAM role to your Workspace
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/020_prerequisites/workspace/workspaceiam/" title="Update IAM settings for your Workspace" class="dd-item ">
+        <a href="../../en/020_prerequisites/workspace/workspaceiam/">
+        Update IAM settings for your Workspace
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+             
+            
+          
+             
+            
+          
+             
+            
+          
+             
+            
+          
+             
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/030_application/" title="Sample Application Structure" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/030_application/">
+          Sample Application Structure
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/030_application/sam-init/" title="Creating a serverless application" class="dd-item ">
+        <a href="../../en/030_application/sam-init/">
+        Creating a serverless application
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/030_application/explore-sam/" title="Exploring the Hello World app" class="dd-item ">
+        <a href="../../en/030_application/explore-sam/">
+        Exploring the Hello World app
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/030_application/delete-sample/" title="Deleting the Sample App" class="dd-item ">
+        <a href="../../en/030_application/delete-sample/">
+        Deleting the Sample App
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/030_application/clone-repo/" title="Cloning the Service Repo" class="dd-item ">
+        <a href="../../en/030_application/clone-repo/">
+        Cloning the Service Repo
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/030_application/sam-deploy/" title="Deploying the Backend Service" class="dd-item ">
+        <a href="../../en/030_application/sam-deploy/">
+        Deploying the Backend Service
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/030_application/testing-app/" title="Testing the APIs" class="dd-item ">
+        <a href="../../en/030_application/testing-app/">
+        Testing the APIs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/040_pipeline/" title="Create the CI/CD Pipeline" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/040_pipeline/">
+          Create the CI/CD Pipeline
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/create-repo/" title="Create a CodeCommit Repository" class="dd-item ">
+        <a href="../../en/040_pipeline/create-repo/">
+        Create a CodeCommit Repository
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/iam-permission/" title="Configure IAM Roles &amp; Permissions" class="dd-item ">
+        <a href="../../en/040_pipeline/iam-permission/">
+        Configure IAM Roles &amp; Permissions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/git-credentials/" title="Generate CodeCommit Credentials" class="dd-item ">
+        <a href="../../en/040_pipeline/git-credentials/">
+        Generate CodeCommit Credentials
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/upload-code-git/" title="Upload Code to Repository" class="dd-item ">
+        <a href="../../en/040_pipeline/upload-code-git/">
+        Upload Code to Repository
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/create-s3-bucket/" title="Create a S3 Bucket for Build Artifacts" class="dd-item ">
+        <a href="../../en/040_pipeline/create-s3-bucket/">
+        Create a S3 Bucket for Build Artifacts
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/create-pipeline/" title="Multi-Environment Pipeline Setup" class="dd-item ">
+        <a href="../../en/040_pipeline/create-pipeline/">
+        Multi-Environment Pipeline Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/create-build-actions/" title="Configure Additional Build Actions" class="dd-item ">
+        <a href="../../en/040_pipeline/create-build-actions/">
+        Configure Additional Build Actions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/create-deploy-actions/" title="Configure Deploy Actions" class="dd-item ">
+        <a href="../../en/040_pipeline/create-deploy-actions/">
+        Configure Deploy Actions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/trigger-new-release/" title="Trigger New Release" class="dd-item ">
+        <a href="../../en/040_pipeline/trigger-new-release/">
+        Trigger New Release
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/040_pipeline/cleanup/" title="Cleanup" class="dd-item ">
+        <a href="../../en/040_pipeline/cleanup/">
+        Cleanup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/050_catalog/" title="Packaging and Distributing the Pipeline" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/050_catalog/">
+          Packaging and Distributing the Pipeline
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/050_catalog/service-catalog/" title="AWS Service Catalog" class="dd-item ">
+        <a href="../../en/050_catalog/service-catalog/">
+        AWS Service Catalog
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/050_catalog/package-app/" title="Packaging the Node.js Application" class="dd-item ">
+        <a href="../../en/050_catalog/package-app/">
+        Packaging the Node.js Application
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/050_catalog/cf-template/" title="Creating a Pipeline CloudFormation Template" class="dd-item ">
+        <a href="../../en/050_catalog/cf-template/">
+        Creating a Pipeline CloudFormation Template
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/050_catalog/catalog-create/" title="Creating a Service Catalog Product" class="dd-item ">
+        <a href="../../en/050_catalog/catalog-create/">
+        Creating a Service Catalog Product
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/050_catalog/catalog-access/" title="Granting Access to Users Launch the Product" class="dd-item ">
+        <a href="../../en/050_catalog/catalog-access/">
+        Granting Access to Users Launch the Product
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/050_catalog/catalog-launch/" title="Launching a Serverless Project" class="dd-item ">
+        <a href="../../en/050_catalog/catalog-launch/">
+        Launching a Serverless Project
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/050_catalog/testing-app/" title="Testing the APIs" class="dd-item ">
+        <a href="../../en/050_catalog/testing-app/">
+        Testing the APIs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/060_conclusion/" title="Conclusion" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/060_conclusion/">
+          Conclusion
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/060_conclusion/steps-done/" title="What Have We Accomplished" class="dd-item ">
+        <a href="../../en/060_conclusion/steps-done/">
+        What Have We Accomplished
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/060_conclusion/feedback/" title="Let us know what you think!" class="dd-item ">
+        <a href="../../en/060_conclusion/feedback/">
+        Let us know what you think!
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    
+    
+    <li data-nav-id="/en/070_cleanup/" title="Cleanup" class="dd-item 
+        
+        
+        ">
+      <a href="../../en/070_cleanup/">
+          Cleanup
+          
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/070_cleanup/stacks/" title="Remove the Environment Stacks" class="dd-item ">
+        <a href="../../en/070_cleanup/stacks/">
+        Remove the Environment Stacks
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/070_cleanup/s3bucket/" title="Delete the S3 Bucket" class="dd-item ">
+        <a href="../../en/070_cleanup/s3bucket/">
+        Delete the S3 Bucket
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/070_cleanup/service-catalog/" title="Undeploy the Service Catalog" class="dd-item ">
+        <a href="../../en/070_cleanup/service-catalog/">
+        Undeploy the Service Catalog
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/070_cleanup/commit/" title="Delete the CodeCommit Repositories" class="dd-item ">
+        <a href="../../en/070_cleanup/commit/">
+        Delete the CodeCommit Repositories
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/070_cleanup/workspace/" title="Cleanup the Workspace" class="dd-item ">
+        <a href="../../en/070_cleanup/workspace/">
+        Cleanup the Workspace
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="en/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="en/more_resources"><i class='fas fa-bookmark'></i> More Resources</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="en/authors"><i class='fas fa-users'></i> Authors</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/aws-samples/eks-workshop"><i class='fab fa-github'></i> GitHub Project</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="mailto:serverless-catalog-workshop@amazon.com"><i class='fas fa-envelope'></i> Feedback / Questions?</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="/en/more_resources/" selected>English</option>
+                    
+                  
+              
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    <section class="copyright">&copy; 2020 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<section>
+</left>
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://code.amazon.com/packages/Aws-workshop-template/blobs/master/--/workshop/content//more_resources.en.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='../../en/'>AWS Serverless Catalog Workshop</a> > More Resources
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              More Resources
+            </h1>
+          
+
+        
+
+
+
+<p>Discover more AWS resources for building and running your application on AWS:</p>
+<h4 id="more-workshops">More Workshops</h4>
+<ul>
+<li><a href="https://ecsworkshop.com">Amazon ECS Workshop</a> - Learn how to use Stelligent Mu to deploy a microservice architecture that runs in AWS Fargate</li>
+<li><a href="https://lightsailworkshop.com">Amazon Lightsail Workshop</a> - If you are getting started with the cloud and looking for a way to run an extremely low cost environment Lightsail is perfect. Learn how to deploy to Amazon Lightsail with this workshop.</li>
+</ul>
+<h4 id="tools-for-aws-fargate-and-amazon-ecs">Tools for AWS Fargate and Amazon ECS</h4>
+<ul>
+<li><a href="https://containersonaws.com/">Containers on AWS</a> - Learn common best-practices for running containers on AWS</li>
+</ul>
+<ul>
+<li><a href="http://somanymachines.com/fargate/">fargate</a> - Command line tool for interacting with AWS Fargate. With just a single command you can build, push, and launch your container in Fargate, orchestrated by ECS.</li>
+<li><a href="https://thecode.pub/easy-deploy-your-docker-applications-to-aws-using-ecs-and-fargate-a988a1cc842f">Terraform</a> - Use Terraform to deploy your docker containers in Fargate</li>
+<li><a href="https://www.npmjs.com/package/wonqa">Wonqa</a> is a tool for spinning up disposable QA environments in AWS Fargate, with SSL enabled by Let's Encrypt. More details about Wonqa on the <a href="https://medium.com/wonder-engineering/on-demand-qa-environments-with-aws-fargate-c23b41f15a0c">Wonder Engineering blog</a></li>
+<li><a href="https://github.com/coldbrewcloud/coldbrew-cli">coldbrew</a> - Fantastic tool that provisions ECS infrastructure, builds and deploys your container, and connects your services to an application load balancer automatically. Has a great developer experience for day to day use</li>
+<li><a href="https://github.com/stelligent/mu">mu</a> - Automates everything relating to ECS devops and CI/CD. This framework lets you write a simple metadata file and it constructs all the infrastructure you need so that you can deploy to ECS by simply pushing to your Git repo.</li>
+</ul>
+<h4 id="courses">Courses</h4>
+<ul>
+<li><a href="https://testdriven.io/">Microservices with Docker, Flask, and React</a> - Learn how to build, test, and deploy microservices powered by Docker, Flask, React Amazon ECS!</li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+		
+			<a class="nav nav-next" href="../../en/010_introduction/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1581887686"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1581887686"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1581887686"></script>
+    <script src="../../js/jquery.sticky.js?1581887686"></script>
+    <script src="../../js/featherlight.min.js?1581887686"></script>
+    <script src="../../js/highlight.pack.js?1581887686"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1581887686"></script>
+    <script src="../../js/learn.js?1581887686"></script>
+    <script src="../../js/hugo-learn.js?1581887686"></script>
+
+    <link href="../../mermaid/mermaid.css?1581887686" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1581887686"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+                console.log('Service Worker Registered');
+            });
+
+        navigator.serviceWorker
+            .ready
+            .then(function(registration) {
+                console.log('Service Worker Ready');
+            });
+    }
+</script>
+
+
+  </body>
+</html>
+
