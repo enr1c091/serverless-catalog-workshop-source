@@ -39,5 +39,12 @@ aws s3 rb s3://aws-serverless-catalog-wksp-build-<FIRSTNAME-LASTNAME> --force
 #### Delete the IAM Roles
 
 ```sh
-aws iam delete-role --name 
+aws iam delete-role-policy --role-name serverless-catalog-wksp-build-role --policy-name build-permissions
+aws iam delete-role --role-name serverless-catalog-wksp-build-role
+
+aws iam delete-role-policy --role-name serverless-catalog-wksp-pipeline-role --policy-name pipeline-permissions
+aws iam delete-role --role-name serverless-catalog-wksp-pipeline-role
+
+aws iam delete-role-policy --role-name serverless-catalog-wksp-cf-role --policy-name cf-permissions
+aws iam delete-role --role-name serverless-catalog-wksp-cf-role
 ```

@@ -32,7 +32,7 @@ TRUST="{ \"Version\": \"2012-10-17\", \"Statement\": [ { \"Effect\": \"Allow\", 
 
 aws iam create-role --role-name serverless-catalog-wksp-cf-role --assume-role-policy-document "$TRUST" --output text --query 'Role.Arn'
 
-aws iam put-role-policy --role-name serverless-catalog-wksp-cf-role --policy-name build-permissions --policy-document file:///tmp/iam-role-policy
+aws iam put-role-policy --role-name serverless-catalog-wksp-cf-role --policy-name cf-permissions --policy-document file:///tmp/iam-role-policy
 ```
 
 Create role for AWS CodePipeline:
@@ -44,7 +44,7 @@ TRUST="{ \"Version\": \"2012-10-17\", \"Statement\": [ { \"Effect\": \"Allow\", 
 
 aws iam create-role --role-name serverless-catalog-wksp-pipeline-role --assume-role-policy-document "$TRUST" --output text --query 'Role.Arn'
 
-aws iam put-role-policy --role-name serverless-catalog-wksp-pipeline-role --policy-name build-permissions --policy-document file:///tmp/iam-role-policy
+aws iam put-role-policy --role-name serverless-catalog-wksp-pipeline-role --policy-name pipeline-permissions --policy-document file:///tmp/iam-role-policy
 ```
 
 #### Add CodeCommit permission to your user
