@@ -24,9 +24,9 @@ phases:
       - echo Build started on `date`
       #- cd $CODEBUILD_SRC_DIR/workshop
       - hugo --quiet
-      - aws s3 sync public/ s3://serverless-catalog-workshop.ebergamo.cloud/ --cache-control 'max-age=3600, public' --exclude '*' --include '*.html' --include '*.xml'
-      - aws s3 sync public/ s3://serverless-catalog-workshop.ebergamo.cloud/ --cache-control 'max-age=86400, public' --exclude '*.html' --exclude '*.xml'
-      #- aws cloudfront create-invalidation --distribution-id E29Q7PH44K3X99 --paths /\*
+      - aws s3 sync public/ s3://$S3_BUCKET/ --cache-control 'max-age=3600, public' --exclude '*' --include '*.html' --include '*.xml'
+      - aws s3 sync public/ s3://$S3_BUCKET/ --cache-control 'max-age=86400, public' --exclude '*.html' --exclude '*.xml'
+      #- aws cloudfront create-invalidation --distribution-id $CF_DISTRIBUTION --paths /\*
 
     finally:
       - echo Building the HTML files finished
