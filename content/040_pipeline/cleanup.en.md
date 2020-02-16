@@ -35,3 +35,9 @@ aws codepipeline delete-pipeline --name serverless-pipeline
 aws s3 rm s3://aws-serverless-catalog-wksp-build-<FIRSTNAME-LASTNAME> --recursive
 aws s3 rb s3://aws-serverless-catalog-wksp-build-<FIRSTNAME-LASTNAME> --force
 ```
+
+#### Delete the IAM Roles
+
+```sh
+aws iam delete-role --name 
+```

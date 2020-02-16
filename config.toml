@@ -14,18 +14,18 @@ pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 
 [params]
-  editURL = "https://code.amazon.com/packages/Aws-workshop-template/blobs/master/--/workshop/content/"
+  editURL = "https://github.com/enr1c091/serverless-catalog-workshop-source/blobs/master/--/content/"
   description = "AWS Serverless Catalog Workshop"
   author = "Enrico Bergamo"
   disableBreadcrumb = false
   disableNextPrev = false
-  themeVariant = "aws"
+  themeVariant = "mine"
   disableSearch = false
   disableAssetsBusting = false
   disableLanguageSwitchingButton = false
   disableShortcutsTitle = false
   disableInlineCopyToClipBoard = true
-  ghrepo = "https://github.com/aws-samples/eks-workshop/"
+  ghrepo = "https://github.com/enr1c091/serverless-catalog-workshop-source/"
   branch = "master"
   template_bucket = "eksworkshop.com"
   pygmentsUseClasses = true
@@ -45,7 +45,7 @@ languageName = "English"
 
 [Languages.es]
 title = "AWS Serverless Catalog Workshop"
-weight = 3
+weight = 2
 languageName = "Español"
 
 [Languages.pt]
@@ -92,5 +92,5 @@ url = "mailto:serverless-catalog-workshop@amazon.com"
 weight = 5
 
 [outputs]
-home = [ "HTML", "JSON"]
-page = [ "HTML" ]
+home = [ "HTML", "RSS", "JSON"]
+page = [ "HTML", "RSS", "JSON" ]
