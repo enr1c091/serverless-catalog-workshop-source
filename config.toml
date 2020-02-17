@@ -14,7 +14,7 @@ pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 
 [params]
-  editURL = "https://github.com/enr1c091/serverless-catalog-workshop-source/blobs/master/--/content/"
+  editURL = "https://github.com/enr1c091/serverless-catalog-workshop-source/edit/master/content/"
   description = "AWS Serverless Catalog Workshop"
   author = "Enrico Bergamo"
   disableBreadcrumb = false
@@ -25,9 +25,9 @@ pygmentsStyle = "monokai"
   disableLanguageSwitchingButton = false
   disableShortcutsTitle = false
   disableInlineCopyToClipBoard = true
-  ghrepo = "https://github.com/enr1c091/serverless-catalog-workshop-source/"
+  ghrepo = "https://github.com/enr1c091/serverless-catalog-workshop/"
   branch = "master"
-  template_bucket = "eksworkshop.com"
+  template_bucket = "serverless-catalog-workshop.ebergamo.cloud"
   pygmentsUseClasses = true
   pygmentsCodeFences = true
   pygmentsCodefencesGuessSyntax = true
@@ -83,7 +83,7 @@ weight = 3
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub Project"
-url = "https://github.com/aws-samples/eks-workshop"
+url = "https://github.com/enr1c091/serverless-catalog-workshop"
 weight = 4
 
 [[menu.shortcuts]]
@@ -93,4 +93,4 @@ weight = 5
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
-page = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML" ]
